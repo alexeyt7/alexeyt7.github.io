@@ -1,0 +1,61 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+---
+
+<header>
+    <a href="/" id="title">
+        <hgroup>
+            <h1>Alexey Tatarinov</h1>
+            <p>Electrical Engineering</p>
+        </hgroup>
+    </a>
+    <nav>
+        <HeaderLink href="/">Home</HeaderLink>
+        <!-- <HeaderLink href="/blog">Blog</HeaderLink> -->
+        <!-- <HeaderLink href="/experience">Experience</HeaderLink> -->
+        <HeaderLink href="/resume.pdf">Resume</HeaderLink>
+        <HeaderLink href="mailto:alexeyt04@gmail.com">Contact</HeaderLink>
+    </nav>
+</header>
+
+<style>
+    header {
+        font-family: var(--font-sans-2);
+        font-size: 1.2rem;
+        font-weight: 500;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 2rem;
+
+        #title {
+            color: var(--fg);
+            text-decoration: solid 2px underline var(--fx);
+            line-height: 1.1;
+            p {
+                color: var(--fm);
+                font-weight: normal;
+            }
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 1em;
+            justify-content: start;
+            a {
+                color: var(--fx);
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &.active {
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+</style>
