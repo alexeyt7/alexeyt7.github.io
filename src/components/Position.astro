@@ -1,0 +1,44 @@
+---
+const { company, location, time, position } = Astro.props;
+---
+
+<details class="Position">
+    <summary>
+        <div>
+            <h1>{company} | {location}</h1>
+            <h2>{time}</h2>
+            <p>{position}</p>
+        </div>
+    </summary>
+    <p>
+        <slot />
+    </p>
+
+    <style>
+        .Position {
+            border-radius: 10px;
+            box-shadow: 0 0 2px var(--bm);
+            background-color: var(--br);
+            padding: 0.5em 1em;
+
+            ul {
+                font-size: 0.9em;
+            }
+        }
+
+        :is(h1, h2, h3, h4, h5, h6) {
+            font-size: 1rem;
+        }
+
+        .Head {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-style: italic;
+        }
+    </style>
+</details>
