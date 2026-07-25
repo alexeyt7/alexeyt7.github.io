@@ -16,8 +16,7 @@
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
     "@inc/uchu": "^3.0.0",
-    "astro": "^7.1.1",
+    "astro": "^7.1.3",
     "sharp": "^0.35.3"
-  },
-  "packageManager": "pnpm@12.0.0-alpha.15+sha512.2d43ab9115c5142b2b16f945b56f7faf7f1aa5b7a08dc189a024c1a369ed3638dcda4abe712623f3fc28b3bb5af2ad04a7ce53fb2c7295813fa0d39049aa71cc"
+  }
 }
